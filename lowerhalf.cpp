@@ -4,7 +4,7 @@
 #include <stdio.h>
 using namespace std;
 
-	int m,n,a[100][100],b[100][100];
+	int n,a[100][100];
 
 void nhap1() {
     cin>>n;
@@ -12,22 +12,15 @@ void nhap1() {
         for (int j = 0; j < n; j++) {
             cin >> a[i][j]; 
         }
-    }
-	for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            cin >> b[i][j]; 
-        }
-    }  
+	}
 }
-
-
 void inmang(){
-    for(int i = 0; i < n; i++) {
-        for(int j = 0; j < n; j++) {
-            cout<<a[i][j]+b[i][j]<<" ";
-    	}
-    	cout<<endl; 
-	}	
+	int s = 0; 
+	for(int j = 0; j < n; j++)
+    for(int i = j+1; i < n; i++){
+         s += a[i][j];
+	}
+	cout<<s;	
 }
 int main ()
 {

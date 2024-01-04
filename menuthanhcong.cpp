@@ -443,32 +443,25 @@ int main()
       switch (chon) {
         case 0:
           Baitap1();
-        Ve_menu(x0, y0, chon, sodong, st);
           break;
         case 1:
           Baitap2();
-        Ve_menu(x0, y0, chon, sodong, st);
-		  break;
+          break;
         case 2:
           Baitap3();
-        Ve_menu(x0, y0, chon, sodong, st);
-		  break;
+          break;
         case 3:
           Baitap4();
-        Ve_menu(x0, y0, chon, sodong, st);  
-		  break;
+          break;
         case 4:
           Baitap5();
-        Ve_menu(x0, y0, chon, sodong, st);  
-		  break;
+          break;
         case 5:
           Baitap6();
-        Ve_menu(x0, y0, chon, sodong, st);  
-		  break;
+          break;
         case 6:
           Baitap7();
-        Ve_menu(x0, y0, chon, sodong, st);  
-		  break;
+          break;
         case 7:
           Baitap8();
           break;

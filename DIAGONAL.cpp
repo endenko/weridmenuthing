@@ -12,22 +12,14 @@ void nhap1() {
         for (int j = 0; j < n; j++) {
             cin >> a[i][j]; 
         }
-    }
-	for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            cin >> b[i][j]; 
-        }
-    }  
+	}
 }
-
-
 void inmang(){
+	int s = 0; 
     for(int i = 0; i < n; i++) {
-        for(int j = 0; j < n; j++) {
-            cout<<a[i][j]+b[i][j]<<" ";
-    	}
-    	cout<<endl; 
-	}	
+         s += a[i][i];
+	}
+	cout<<s;	
 }
 int main ()
 {
