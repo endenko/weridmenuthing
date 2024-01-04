@@ -19,7 +19,7 @@ public:
     }
 };
 
-int main() {
+int main() {n 
     int num;
     cout << "Nh?p m?t s? nguyên: ";
     cin >> num;
