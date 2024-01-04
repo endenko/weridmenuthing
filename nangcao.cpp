@@ -5,14 +5,10 @@
 using namespace std;
 int main ()
 {
-	int n,a,s;
-	cin>>n;
-	for (int i = 1;i <= n;i++)
-	{
-	cin>>a;
-	if ( a % 2 ==0) 
-	s += a; 
-	}
-	cout<<s; 
+	double x,y;
+	cin >>x>>y;
+	double S = log(sqrt(x*x+y*y)-atan(y/x));
+	cout<<fixed<<setprecision (3);
+	cout<<S; 
 }
 

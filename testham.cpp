@@ -3,16 +3,17 @@
 #include <math.h>
 #include <stdio.h>
 using namespace std;
+
+	 float sqr(float x)
+{
+	 	return x*x; 	
+}
+		   
+
 int main ()
 {
-	int n,a,s;
-	cin>>n;
-	for (int i = 1;i <= n;i++)
-	{
+	float a;
 	cin>>a;
-	if ( a % 2 ==0) 
-	s += a; 
-	}
-	cout<<s; 
+	cout<<sqr(a);
 }
 

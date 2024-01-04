@@ -5,14 +5,9 @@
 using namespace std;
 int main ()
 {
-	int n,a,s;
-	cin>>n;
-	for (int i = 1;i <= n;i++)
-	{
-	cin>>a;
-	if ( a % 2 ==0) 
-	s += a; 
-	}
-	cout<<s; 
+	long long a,b,c,d;
+	cin>>a>>b>>c>>d;
+	long long x = a*b-c*d;
+	cout<<"Difference = "<<x; 
 }
 

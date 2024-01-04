@@ -1,12 +1,21 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+#include <stdio.h>
 using namespace std;
-int main(){
-	int a,b,s=0;
-	cin>>a>>b;
-	for(int i = a;i<=b;i++){
-		if(i % 3 == 0){
-			s++;
-		}
-	}
-	cout<<s;	
+int main ()
+{
+    long long n;
+    cin >> n;
+
+    int k = 0;
+    while (n > 0) {
+        n /= 10;
+        k++;
+    }
+
+    cout<<k<<endl;
+
+    return 0;
 }
+

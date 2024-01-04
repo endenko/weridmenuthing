@@ -5,14 +5,10 @@
 using namespace std;
 int main ()
 {
-	int n,a,s;
+	int n,S=0;
 	cin>>n;
-	for (int i = 1;i <= n;i++)
-	{
-	cin>>a;
-	if ( a % 2 ==0) 
-	s += a; 
-	}
-	cout<<s; 
+	for( int i =1;i<=n;++i) S+=i;
+	cout<<S; 
+	return 0; 
 }
 

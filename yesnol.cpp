@@ -5,14 +5,16 @@
 using namespace std;
 int main ()
 {
-	int n,a,s;
+	long long n;
 	cin>>n;
-	for (int i = 1;i <= n;i++)
+	if ((n %2 ==0) or (n<0 && n %3 ==0 ) )
 	{
-	cin>>a;
-	if ( a % 2 ==0) 
-	s += a; 
+	cout<<"Yes";
+	}	
+	else
+	{
+	cout<<"No";
 	}
-	cout<<s; 
+	return 0; 
 }
 
