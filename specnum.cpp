@@ -1,9 +1,6 @@
-#include <iostream>
-#include <iomanip>
-#include <math.h>
-#include <stdio.h>
+#include <bits/stdc++.h>
+#include <fstream> 
 using namespace std;
-
 	int sumle(int n){
 		int sum = 0; 
 		while (n>0){
@@ -29,8 +26,10 @@ using namespace std;
 
 int main ()
 {
+	ifstream f("SPECNUM.INP");
+	ofstream fo("SPECNUM.OUT");
 	int a,b;
-	cin>>a>>b; 
+	f>>a>>b; 
 	int dem = 0;
 	for(int n = a;n<=b;n++){
 		int q = sumchan(n);  
@@ -40,6 +39,6 @@ int main ()
 			dem++;
 		} 
 	} 
-	cout<<dem<<endl; 
+	fo<<dem<<endl; 
 }
 

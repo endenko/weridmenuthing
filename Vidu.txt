@@ -1,0 +1,3 @@
+cach ghi file txt
+10 30
+3.25
